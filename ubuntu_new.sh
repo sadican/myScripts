@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 ## author:: sadican
-## description:: some stuffs after installing new Ubuntu 14.04.1 LTS
+## description:: installation and adjustments after installing new Ubuntu 14.04.1 LTS
+## linux distro:: Ubuntu 14.04.1 LTS x64
 
 # fail on error
 set -e
