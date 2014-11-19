@@ -2,6 +2,7 @@
 ## author:: sadican
 ## description:: installation script for Floodlight controller
 ## https://github.com/floodlight/floodlight
+## linux distro:: Ubuntu 14.04.1 LTS x64
 
 # fail on error
 set -e
