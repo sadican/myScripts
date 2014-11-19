@@ -7,7 +7,7 @@ ubuntu_new.sh :: Installation script of some packages (for new Ubuntu 14.04.1 LT
 
 floodlight.sh :: Installation script for Floodlight controller [2]
 
-mininet.sh :: Updated version of installation script for Mininet + Open vSwitch 2.3.0 + OpenFlow [3-4-5]
+mininet.sh :: Updated version of installation script for Mininet + Open vSwitch 2.3.0 + OpenFlow + Cbench + Wireshark [3-4-5]
 
 eclipse_luna.sh :: Installation script for Eclipse Luna [6]
 
