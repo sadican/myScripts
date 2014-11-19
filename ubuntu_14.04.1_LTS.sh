@@ -6,11 +6,11 @@ set -e
 # Fail on unset var usage
 set -o nounset
 
-echo "UPDATING REPOSITORIES..."
+echo -e "\nUPDATING REPOSITORIES\n"
 sudo apt-get update
 
-echo "UPGRADING PACKAGES..."
+echo -e "\nUPGRADING PACKAGES\n"
 sudo apt-get upgrade
 
-echo "INSTALLING NEW PACKAGES..."
+echo -e "\nINSTALLING NEW PACKAGES\n"
 sudo apt-get install -y git build-essential default-jdk ant python-dev nautilus-open-terminal filezilla unity-tweak-tool gnome-tweak-tool
