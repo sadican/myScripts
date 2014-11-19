@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
+## author:: sadican
+## description:: installation script for Floodlight controller
+## https://github.com/floodlight/floodlight
 
-# Fail on error
+# fail on error
 set -e
 
-# Fail on unset var usage
+# fail on unset var usage
 set -o nounset
 
 echo -e "\nINSTALLING REQUIRED PACKAGES\n"
