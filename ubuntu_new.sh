@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
+## author:: sadican
+## description:: some stuffs after installing new Ubuntu 14.04.1 LTS
 
-# Fail on error
+# fail on error
 set -e
 
-# Fail on unset var usage
+# fail on unset var usage
 set -o nounset
 
 echo -e "\nUPDATING REPOSITORIES\n"
