@@ -6,19 +6,19 @@ set -e
 # Fail on unset var usage
 set -o nounset
 
-echo "\nINSTALLING REQUIRED PACKAGES..."
+echo -e "\nINSTALLING REQUIRED PACKAGES\n"
 sudo apt-get install -y git build-essential default-jdk ant python-dev
 
-echo "CLONING FLOODLIGHT FROM GITHUB..."
+echo -e "\nCLONING FLOODLIGHT FROM GITHUB\n"
 git clone git://github.com/floodlight/floodlight.git
 
-echo "ENTERING FLOODLIGHT DIRECTORY..."
+echo -e "\nENTERING FLOODLIGHT DIRECTORY\n"
 cd floodlight
 
-echo "COMPILING..."
+echo -e "\nCOMPILING\n"
 ant
 
-echo "PREPARING ECLIPSE PROJECT..."
+echo -e "\nPREPARING ECLIPSE PROJECT\n"
 ant eclipse
 
 exit
