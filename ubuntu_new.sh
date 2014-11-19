@@ -16,7 +16,7 @@ echo -e "\nUPGRADING PACKAGES\n"
 sudo apt-get upgrade
 
 echo -e "\nINSTALLING NEW PACKAGES\n"
-sudo apt-get install -y git build-essential dpkg default-jdk ant python-dev nautilus-open-terminal filezilla unity-tweak-tool gnome-tweak-tool
+sudo apt-get install -y git build-essential dpkg nautilus-open-terminal filezilla unity-tweak-tool gnome-tweak-tool
 
 echo -e "\nDOWNLOADING GOOGLE CHROME\n"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
