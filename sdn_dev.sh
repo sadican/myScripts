@@ -401,10 +401,12 @@ $install tcpdump
 # disable IPv6
 if ! grep 'disable IPv6' /etc/sysctl.conf; then
 echo 'Disabling IPv6'
-echo '# Mininet: disable IPv6
+echo '
+# Mininet: disable IPv6
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
-net.ipv6.conf.lo.disable_ipv6 = 1' fi | sudo tee -a /etc/sysctl.conf > /dev/null
+net.ipv6.conf.lo.disable_ipv6 = 1' | sudo tee -a /etc/sysctl.conf > /dev/null
+fi
 
 OF_VERSION=1.0
 kernel
