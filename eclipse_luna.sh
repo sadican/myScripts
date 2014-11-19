@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
+## author:: sadican
+## description:: Eclipse Luna installation script under opt folder
+## linux distro:: Ubuntu 14.04.1 LTS x64
 
-# Fail on error
+# fail on error
 set -e
 
-# Fail on unset var usage
+# fail on unset var usage
 set -o nounset
 
 ECLIPSE="eclipse-standard-luna-SR1-linux-gtk-x86_64"
