@@ -32,6 +32,14 @@ alias shutdown='sudo shutdown -h now'
 alias cmdx='sudo chmod +x'" > /home/$USER/.bash_aliases
 source /home/$USER/.bash_aliases
 
+echo -e "\nENABLE HIBERNATE\n"
+HIBERNATE_CODE="[Re-enable hibernate by default in upower]\nIdentity=unix-user:*\nAction=org.freedesktop.upower.hibernate\nResultActive=yes\n\n[Re-enable hibernate by default in logind]\nIdentity=unix-user:*\nAction=org.freedesktop.login1.hibernate\nResultActive=yes"
+echo -e $HIBERNATE_CODE > com.ubuntu.enable-hibernate.pkla
+sudo mv com.ubuntu.enable-hibernate.pkla /var/lib/polkit-1/localauthority/50-local.d/
+
+echo -e "\nHIBERNATE WHEN LID IS CLOSED\n"
+echo -e "#MODIFICATION TO ACTIVE HIBERNATE WHEN LID IS CLOSED\nHandleLidSwitch=hibernate" | sudo tee --append /etc/systemd/logind.conf
+
 echo -e "\nDOWNLOADING GOOGLE CHROME\n"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
